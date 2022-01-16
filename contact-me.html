@@ -133,23 +133,25 @@
             <form id="message-form">
               <div class="form-group mt-5">
                 <input
-                  type="text"
+                  type="username"
+                  id="input-username"
                   class="form-control"
-                  id="name"
                   placeholder="Name"
                 />
 
                 <input
                   type="email"
+                  id="input-email"
                   class="form-control mt-2"
-                  id="email"
-                  placeholder="yourname@example.com"
+                  placeholder="Email"
                 />
-              </div>
 
-              <div class="form-group mt-2">
-                <label for="message">Message</label>
-                <textarea class="form-control" id="message" rows="3"></textarea>
+                <textarea
+                  class="form-control mt-2"
+                  id="input-message"
+                  rows="3"
+                  placeholder="Message"
+                ></textarea>
               </div>
               <button type="submit" class="btn btn-secondary mt-2">
                 Submit

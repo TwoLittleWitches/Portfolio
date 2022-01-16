@@ -1,9 +1,8 @@
 function submitForm(event) {
-  let name = document.querySelector("#name");
-
+  let username = document.querySelector("#input-username");
   event.preventDefault();
   alert(
-    `Thank you ${name}... Your message has been sent and I will be in touch soon.`
+    `Thank you ${username}... Your message has been sent and I will be in touch soon.`
   );
 }
 
