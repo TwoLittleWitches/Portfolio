@@ -1,10 +1,11 @@
 function submitForm(event) {
-  let username = document.querySelector("#input-username");
+  let inputemail = document.querySelector("#email-input");
+  let inputuser = document.querySelector("#username-input");
   event.preventDefault();
   alert(
-    `Thank you ${username}... Your message has been sent and I will be in touch soon.`
+    `Thank you ${inputuser.value}... Your message has been sent and I shall get back to you shortly.`
   );
 }
 
-let form = document.querySelector("#message-form");
+let form = document.querySelector("#signup-form");
 form.addEventListener("submit", submitForm);
