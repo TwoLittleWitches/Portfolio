@@ -5,20 +5,29 @@
   --brand-color3: white;
   --default-font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   --heading-font-family: impact;
-  --default-font-size: calc(12px + 0.7vh);
+  --default-font-size: calc(8px + 1vh); 
+  /*--default-font-size: calc(12px + 0.7vh); */
   --small-font-size: 12px;
 }
 
 body {
   font-family: var(--default-font-family);
   font-size: var(--default-font-size);
+  line-height: 1.2em;
 }
 
 h1,
 h2 {
   color: var(--brand-color1);
 }
-
+@media only screen
+  and (min-width: 576px)
+  and (max-width: 767px)
+ {
+  .container, .container-sm {
+    max-width: 100% !important;
+  }
+}
 #footer {
   color: rgb(255, 255, 255, 1);
   background-color: rgb(0, 0, 0, 0.5);
@@ -58,7 +67,7 @@ h2 {
 }
 
 .hero h1 {
-  font-size: 96px;
+  font-size: calc(48px + 4vh); /*96*/
   color: rgb(255, 255, 255, 0.5);
   background-color: rgb(0, 0, 0, 0.5);
 }
